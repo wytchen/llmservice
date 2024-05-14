@@ -110,8 +110,8 @@ services:
               count: "all"
               capabilities: [gpu]
               
-  nchc_oepnwebui:
-    container_name: nchc_oepnwebui
+  nchc_openwebui:
+    container_name: nchc_openwebui
     image: ghcr.io/open-webui/open-webui:main
     pull_policy: always
     ports:
@@ -152,7 +152,7 @@ services:
     networks:
         - nchc
     depends_on:
-      - nchc_oepnwebui         
+      - nchc_openwebui         
     extra_hosts:
       - host.docker.internal:host-gateway
       
