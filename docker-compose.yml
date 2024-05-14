@@ -46,7 +46,7 @@ services:
       - host.docker.internal:host-gateway      
     #command: bash -c "llamafactory-cli webui && jupyter lab --NotebookApp.token=${SYSTEM_KEY} --notebook-dir=/workspace --port=9999"      
     working_dir: /workspace
-    command: bash -c "cd /app && llamafactory-cli webui > /workspace/factory.log & jupyter lab --NotebookApp.token=${SYSTEM_KEY} --notebook-dir=/workspace --port=9999"      
+    command: bash -c "cd /app && llamafactory-cli webui > /workspace/factory.log 2>&1 & jupyter lab --NotebookApp.token=${SYSTEM_KEY} --notebook-dir=/workspace --port=9999"      
     deploy:
       resources:
         reservations:
