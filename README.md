@@ -7,7 +7,7 @@
 
 ## GIT 下載套件
 ```
-git clone https://github.com/c00cjz00/llmservice
+git clone https://github.com/wytchen/llmservice
 ```
 
 ## LLaMA Factory Dcoker Image 製作
